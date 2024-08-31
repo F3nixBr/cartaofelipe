@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Vazamento de Cartão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-section">
+            <div class="card">
+                <div class="bank-name">Nome do Banco</div>
+                <div class="card-chip"></div>
+                <div class="card-number">0000 0000 0000 0000</div>
+                <div class="card-name">Nome no cartão</div>
+            </div>
+            <div class="cvv-box">
+                <input type="text" value="000" readonly>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Veja se seu cartão vazou na internet</h2>
+            <form>
+                <label for="name">Nome no cartão</label>
+                <input type="text" id="name" name="name" class="form-input">
+
+                <label for="card-number">Número do cartão</label>
+                <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" class="form-input">
+
+                <div class="expiry-cvv">
+                    <div>
+                        <label for="expiry">Data de expiração</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/AA" class="form-input">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="000" class="form-input">
+                    </div>
+                </div>
+
+                <label for="password">Senha do cartão</label>
+                <input type="password" id="password" name="password" class="form-input">
+
+                <button type="submit">Verificar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
